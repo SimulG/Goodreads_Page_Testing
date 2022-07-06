@@ -59,9 +59,9 @@
   <ItemGroup>
     <Compile Include="BaseClasses\BaseTest.cs" />
     <Compile Include="BaseClasses\BaseLogin.cs" />
-    <Compile Include="SignUp.cs" />
+    <Compile Include="aSignUp.cs" />
     <Compile Include="LoggedInUser.cs" />
-    <Compile Include="Login.cs" />
+    <Compile Include="aSignIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

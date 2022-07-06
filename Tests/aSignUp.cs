@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Tests
 {
-    internal class SignUp
+    internal class aSignUp
     {
         [SetUp]
         public static void Preparation()

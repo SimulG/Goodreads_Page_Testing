@@ -8,7 +8,7 @@ namespace Tests
 {
     internal class LoggedInUser : BaseLogin
     {
-        [Test]
+        [Test, Order(1)]
         public static void bookSearch()
         {
             string expectedText = "1984",
@@ -21,7 +21,7 @@ namespace Tests
 
             Assert.IsTrue(actualText == expectedText);
         }
-        [Test]
+        [Test, Order(2)]
         public static void addBookshelf()
         {
             string expectedResult = "ownedbooks",
@@ -33,12 +33,12 @@ namespace Tests
             actualResult =
                 LoggedInUserPage.checkShelfs();
 
-            if (actualResult == expectedResult)
+            if (actualResult.Contains(expectedResult))
                 LoggedInUserPage.removeShelf();
 
-            Assert.IsTrue(actualResult == expectedResult);
+            Assert.IsTrue(actualResult.Contains(expectedResult));
         }
-        [Test]
+        [Test, Order(3)]
         public static void addReadBookAndReview()
         {
             string expectedBook = "1984",
@@ -46,14 +46,15 @@ namespace Tests
             LoggedInUserPage.inputSearchBoxText();
             LoggedInUserPage.clickSearch();
             LoggedInUserPage.addBookToWantToReadBookshelf();
+            LoggedInUserPage.waitTenSec();
             LoggedInUserPage.goToMyBooks();
             actualBook =
                 LoggedInUserPage.checkAddedBooks();
 
-            if (actualBook == expectedBook)
+            if (actualBook.Contains(expectedBook))
                 LoggedInUserPage.removeBook();
 
-            Assert.IsTrue(actualBook == expectedBook);
+            Assert.IsTrue(actualBook.Contains(expectedBook));
         }
         
 

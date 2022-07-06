@@ -49,10 +49,16 @@ namespace Framework.Pages
             Common.click(locatorAdd);
         }
 
+        public static void waitTenSec()
+        {
+            string locator = "/html/body/div[2]/div[3]/div[1]/div[2]/div[2]/table/tbody/tr[1]/td[2]/div[2]/div/div[1]/span";
+            Common.waitForElementToBeVisable(locator);
+        }
+
         public static string checkShelfs()
         {
 
-            string locator = "/html/body/div[2]/div[3]/div[1]/div[1]/div[3]/div[1]/div/div/div[1]/div[2]/div[5]/a";//laikinai
+            string locator = "//*[@id='paginatedShelfList']//*[contains(text(),'ownedbooks')]";//laikinai
             return Common.getElementText(locator);
         }
 
@@ -68,22 +74,27 @@ namespace Framework.Pages
 
         public static void addBookToWantToReadBookshelf()
         {
-            throw new NotImplementedException();
+            string locator = "/html/body/div[2]/div[3]/div[1]/div[2]/div[2]/table/tbody/tr[1]/td[2]/div[2]/div/div[1]/form/button/span[1]";
+            Common.click(locator);
         }
 
         public static void goToMyBooks()
         {
-            throw new NotImplementedException();
+            string locator = "/html/body/div[2]/div[1]/div/header/div[2]/div/nav/ul/li[2]/a";
+            Common.click(locator);
         }
 
         public static string checkAddedBooks()
         {
-            throw new NotImplementedException();
+            string locator = "/html/body/div[2]/div[3]/div[1]/div[1]/div[3]/div[2]/div[6]/table/tbody/tr/td[4]/div/a";//laikinai
+            return Common.getElementText(locator);
         }
 
         public static void removeBook()
         {
-            throw new NotImplementedException();
+            string locator = "/html/body/div[2]/div[3]/div[1]/div[1]/div[3]/div[2]/div[6]/table/tbody/tr/td[30]/div/div/a";
+            Common.click(locator);
+            Common.okAllert();
         }
     }
 }

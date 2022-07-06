@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Tests
 {
-    internal class Login : BaseTest
+    internal class aSignIn : BaseTest
     {
         [SetUp]
         public static void openPage()

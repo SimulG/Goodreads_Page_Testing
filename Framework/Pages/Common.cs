@@ -36,6 +36,12 @@ namespace Framework.Pages
         {
             Driver.getDriver().SwitchTo().Alert().Accept();
         }
+
+        internal static void waitForElementToBeVisable(string locator)
+        {
+            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), TimeSpan.FromSeconds(20));
+            wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator)));
+        }
         //internal static void waitForElementToBeVisible(string locator)
         //{
         //    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), TimeSpan.FromSeconds(10));
