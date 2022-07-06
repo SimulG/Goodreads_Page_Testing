@@ -31,6 +31,11 @@ namespace Framework.Pages
             string element;
             return element = getElement(locator).GetAttribute("alt");
         }
+
+        internal static void okAllert()
+        {
+            Driver.getDriver().SwitchTo().Alert().Accept();
+        }
         //internal static void waitForElementToBeVisible(string locator)
         //{
         //    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), TimeSpan.FromSeconds(10));

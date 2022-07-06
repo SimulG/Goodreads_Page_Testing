@@ -60,6 +60,8 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="Driver.cs" />
+    <Compile Include="Pages\SignUpPage.cs" />
+    <Compile Include="Pages\LoggedInUserPage.cs" />
     <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="Pages\Common.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
