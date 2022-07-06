@@ -2,14 +2,14 @@
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 
-namespace Tests.BaseTests
+namespace Tests.BaseClasess
 {
-    public class BaseTests
+    public class BaseTest
     {
         [SetUp]
         public static void setup()
         {
-            Driver.getDriver();
+            Driver.setDriver();
         }
         [TearDown]
         public static void close()
