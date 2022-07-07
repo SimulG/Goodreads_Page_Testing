@@ -29,7 +29,7 @@ namespace Framework.Pages
 
         public static void clickSignUpWithEmail()
         {
-            string locator = "/html/body/div[1]/div[1]/div[2]/div/div/div/div/div/a[2]/button";
+            string locator = "//*[@id='choices']/div/a[2]/button";
             Common.click(locator);
         }
 
@@ -56,6 +56,7 @@ namespace Framework.Pages
         public static string checkForCaptcha()
         {
             string locator = "/html/body/div[1]/div[2]/div/div/div/div/div/div/div[1]/span";
+           // string locator = "//*[@class='a - box']/div/div[1]/span";
             return Common.getElementText(locator);
         }
     }

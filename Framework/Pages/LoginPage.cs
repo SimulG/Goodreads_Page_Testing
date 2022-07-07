@@ -32,7 +32,7 @@ namespace Framework.Pages
 
         public static string checkUser()
         {
-            string locator = "/html/body/div[2]/div/header/div[2]/div/div[3]/ul/li[5]/div/a/span/img";//Nerandu geresnio Xpath
+            string locator = "//header/div[2]/div/div[3]/ul/li[5]/div/a/span/img";//Nerandu geresnio Xpath
             return Common.getElementAttribute(locator);
         }
 

@@ -32,7 +32,7 @@ namespace Framework.Pages
 
         internal static void okAllert()
         {
-            Driver.wait(2000);
+            Driver.wait(3000);
             Driver.getDriver().SwitchTo().Alert().Accept();
         }
         

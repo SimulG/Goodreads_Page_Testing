@@ -44,7 +44,7 @@ namespace Tests
             LoggedInUserPage.inputSearchBoxText();
             LoggedInUserPage.clickSearch();
             LoggedInUserPage.addBookToWantToReadBookshelf();
-            LoggedInUserPage.waitTenSec();
+            LoggedInUserPage.waitForElement();
             LoggedInUserPage.goToMyBooks();
             actualBook =
                 LoggedInUserPage.checkAddedBooks();
