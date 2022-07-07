@@ -5,10 +5,10 @@ Asesment of skill for VCS
 ## Urls
 
 main:
-https://www.goodreads.com/  
+https://www.goodreads.com/  /
 subpages:
-https://www.goodreads.com/user/sign_in      
-https://www.goodreads.com/user/sign_up
+https://www.goodreads.com/user/sign_in    /  
+https://www.goodreads.com/user/sign_up    /
 
 extra used pages
 https://10minemail.com/en/
