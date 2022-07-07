@@ -37,6 +37,10 @@ namespace Framework
             Screenshot screenshot = ((ITakesScreenshot)getDriver()).GetScreenshot();
             screenshot.SaveAsFile(screenshotName, ScreenshotImageFormat.Png);
         }
+        public static void wait(int x)
+        {
+            Thread.Sleep(x);
+        }
         public static void closeDriver()
         {
             driver.Quit();

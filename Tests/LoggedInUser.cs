@@ -1,8 +1,6 @@
-﻿using Framework;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Framework.Pages;
 using Tests.BaseClasses;
-using System;
 
 namespace Tests
 {

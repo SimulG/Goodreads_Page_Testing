@@ -3,12 +3,10 @@ using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Framework.Pages
 {
-    internal class Common
+    public class Common
     {
         internal static IWebElement getElement(string locator)
         {
@@ -18,7 +16,7 @@ namespace Framework.Pages
         {
             getElement(locator).SendKeys(keys);
         }
-        internal static void click(string locator)
+       public static void click(string locator)
         {
             getElement(locator).Click();
         }
@@ -34,24 +32,27 @@ namespace Framework.Pages
 
         internal static void okAllert()
         {
+            Driver.wait(2000);
             Driver.getDriver().SwitchTo().Alert().Accept();
         }
-
+        
         internal static void waitForElementToBeVisable(string locator)
         {
             WebDriverWait wait = new WebDriverWait(Driver.getDriver(), TimeSpan.FromSeconds(20));
             wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator)));
         }
-        //internal static void waitForElementToBeVisible(string locator)
-        //{
-        //    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), TimeSpan.FromSeconds(10));
-        //    wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator)));
-        //}
-        //internal static void waitForElementToBeClickable(string locator)
-        //{
-        //    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), TimeSpan.FromSeconds(10));
-        //    wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(locator)));
-        //}
 
+        public static void pasteClipboard()
+        {
+            Actions action = new Actions(Driver.getDriver());
+
+            action.KeyDown(Keys.Control);
+
+            action.SendKeys("v");
+
+            action.KeyUp(Keys.Control);
+
+            action.Build().Perform();
+        }
     }
 }

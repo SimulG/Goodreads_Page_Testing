@@ -60,6 +60,7 @@
     <Compile Include="BaseClasses\BaseTest.cs" />
     <Compile Include="BaseClasses\BaseLogin.cs" />
     <Compile Include="aSignUp.cs" />
+    <Compile Include="BaseClasses\MinMail.cs" />
     <Compile Include="LoggedInUser.cs" />
     <Compile Include="aSignIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -25,6 +25,8 @@ namespace Tests.BaseClasses
             if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
             {
                 Driver.takeScreenshot();
+                LoggedInUserPage.removeShelf();
+                LoggedInUserPage.removeBook();
             }
             Driver.closeDriver();
         }
