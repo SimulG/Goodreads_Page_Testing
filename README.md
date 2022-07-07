@@ -4,9 +4,9 @@ Asesment of skill for VCS
 
 ## Urls
 
-main:
+main: <br />
 https://www.goodreads.com/  <br />
-subpages:
+subpages:  <br />
 https://www.goodreads.com/user/sign_in    <br /> 
 https://www.goodreads.com/user/sign_up    <br />
 
@@ -40,45 +40,45 @@ Make 5 different tests for selected page
 	- Case Signing up		expected result = Reach capthca check
           - steps <br />
           -(optional) copy 10 min mail  <br />
-          -go to sign up page  
-          -click sign up with email  
-          -enter name  
-          -enter email  
-          -enter password  
-          -repeat password  
-          -press create account button  
-          -check captcha page  
+          -go to sign up page  <br />
+          -click sign up with email  <br />
+          -enter name  <br />
+          -enter email  <br />
+          -enter password  <br />
+          -repeat password  <br />
+          -press create account button <br />  
+          -check captcha page  <br />
 <br />
 2. SignIn
 	- Case Signing in		expected result = logged in succesfuly
-          - steps
-          -go to login page
-          -enter email
-          -enter pasword
-          -click sign in
-          -check loged in account
+          - steps <br />
+          -go to login page <br />
+          -enter email <br />
+          -enter pasword <br />
+          -click sign in <br />
+          -check loged in account <br />
       
 3. Logged in user functions
 	- Case Search			expected result = correct search result
-          - steps
-          -log in
-          -input to search bar
-          -click magnifyingglass(search)
-          -check search results
+          - steps <br />
+          -log in <br />
+          -input to search bar <br />
+          -click magnifyingglass(search) <br />
+          -check search results <br />
 
 	- Case Add bookshelf	expected result = correct bookshelf added
           - steps
-          -click my books
-          -click add bookshelf
-          -enter bookshelf name 
-          -click add
-          -check added bookshefs
+          -click my books <br />
+          -click add bookshelf <br />
+          -enter bookshelf name <br />
+          -click add <br />
+          -check added bookshefs <br />
     - case add book         expected result = book added to want to read list
-          - steps
-          -search for book
-          -click add "want to read"
-          -click my books
-          -check added books
+          - steps <br />
+          -search for book <br />
+          -click add "want to read" <br />
+          -click my books <br />
+          -check added books <br />
 
 
 ## Quality of life improvements 
