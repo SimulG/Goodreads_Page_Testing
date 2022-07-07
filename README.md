@@ -5,10 +5,10 @@ Asesment of skill for VCS
 ## Urls
 
 main:
-https://www.goodreads.com/  /
+https://www.goodreads.com/  <br />
 subpages:
-https://www.goodreads.com/user/sign_in    /  
-https://www.goodreads.com/user/sign_up    /
+https://www.goodreads.com/user/sign_in    <br /> 
+https://www.goodreads.com/user/sign_up    <br />
 
 extra used pages
 https://10minemail.com/en/
@@ -38,17 +38,17 @@ Make 5 different tests for selected page
 - Test scenearios - 
 1. SignUp
 	- Case Signing up		expected result = Reach capthca check
-          - steps
-          -(optional) copy 10 min mail
-          -go to sign up page
-          -click sign up with email
-          -enter name
-          -enter email
-          -enter password
-          -repeat password
-          -press create account button
-          -check captcha page
-
+          - steps <br />
+          -(optional) copy 10 min mail  <br />
+          -go to sign up page  
+          -click sign up with email  
+          -enter name  
+          -enter email  
+          -enter password  
+          -repeat password  
+          -press create account button  
+          -check captcha page  
+<br />
 2. SignIn
 	- Case Signing in		expected result = logged in succesfuly
           - steps
