@@ -48,7 +48,7 @@ Make 5 different tests for selected page
           -repeat password  <br />
           -press create account button <br />  
           -check captcha page  <br />
-<br />
+	  
 2. SignIn
 	- Case Signing in		expected result = logged in succesfuly
           - steps <br />
