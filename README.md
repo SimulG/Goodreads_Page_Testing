@@ -5,9 +5,9 @@ Asesment of skill for VCS
 ## Urls
 
 main:
-https://www.goodreads.com/
+https://www.goodreads.com/  
 subpages:
-https://www.goodreads.com/user/sign_in
+https://www.goodreads.com/user/sign_in      
 https://www.goodreads.com/user/sign_up
 
 extra used pages
@@ -81,5 +81,5 @@ Make 5 different tests for selected page
           -check added books
 
 
-#quality of life improvements 
+## Quality of life improvements 
 test is able to remove added bookshelfs and books so the same account could be reused more easily
